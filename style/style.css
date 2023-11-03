@@ -1,0 +1,48 @@
+.container-img-logo{
+    height: 40px;
+    width: 20%;
+    display: flex;
+
+}
+
+.img_logo{
+    object-fit: contain;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ASIDE AND MAIN */
+
+.my_container_aside_main{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.aside{
+    width: 60px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #11273e;
+}
+
+.container_icon_aside{
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_aside{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
