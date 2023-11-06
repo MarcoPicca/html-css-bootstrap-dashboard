@@ -8,6 +8,7 @@
     background-color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -25,18 +26,31 @@
     width: 100%;
 }
 
-.container-icon-nav{
-    width: 10%;
-    height: 40px;
+.container-magnifying-glass{
+    width: 30px;
+    height: 100%;
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: .3rem;
 }
+
 
 .container-input-search{
     width: 75%;
+    height: 90%;
 }
 
 .input-search{
     width: 100%;
 }
+
+.container-icon-nav{
+    width: 10%;
+    height: 40px;
+}
+
 
 /* ASIDE */
 
@@ -107,6 +121,43 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.code-icon{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #f26551;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td p{
+    padding-top: .4rem;
+    margin-left: .5rem;
+}
+
+.container-text-table-state{
+    height: 13px;
+    width: 30px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    margin-top: .8rem;
+}
+
+.container-action{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
 }
 
 .my-little_row_header{
