@@ -44,32 +44,17 @@
                         <i class="fa-solid fa-ellipsis-vertical fa-sm"></i>
                     </div>
                     <div class="icon-nav d-flex me-1 justify-content-center">
-                        <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
-                            <i class="fa-solid d-flex align-items-center fa-bell fa-sm" style="color: #ff8f00;"></i>
-                        </a>
-                    </div>
-                      
-                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                        <div class="offcanvas-header">
-                          <h5 class="offcanvas-title fs-6" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                          <div>
-                            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                          </div>
-                          <div class="dropdown mt-3">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                              Dropdown button
+                        <div class="dropdown dropstart">
+                            <button class="btn" type="button" data-bs-toggle="dropdown">
+                                <i class="fa-solid d-flex align-items-center fa-bell fa-sm" style="color: #ff8f00;"></i>
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><a class="dropdown-item" href="#">Profilo</a></li>
+                              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                              <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
                           </div>
-                        </div>
-                      </div>
+                    </div> 
                 </div>
             </div>
         </div>
@@ -100,12 +85,60 @@
         <main>
             <header class="header_main">
                 <div class="row my_row_header">
-                    <div class="col-12 col-md-3 padd-header marg-header text-white">
-                        <h6 class="f-slim fs-16">Nuovo Studente</h6>
+                    <div class="col-12 d-flex col-md-3 padd-header marg-header text-white">
+                        <h6 class="f-slim d-flex align-items-center mx-3 fs-16">Nuovo Studente</h6>
+                        <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
+                            <div class="add-student">+</div>
+                        </a>
+                          
+                          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title fs-6" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <div>
+                                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                              </div>
+                              <div class="dropdown mt-3">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                  Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                     <div class="col-12 col-md-8 my-little_row_header">
-                        <div class="col-9 col-md-5 height-h5-header padd-header marg-header text-white">
-                            <h5>Boolean</h5>
+                        <div class="col-7 col-md-6 height-h5-header d-flex flex-wrap padd-header marg-header text-white">
+                            <div class="container-h5-header">
+                                <h5>Boolean</h5>
+                            </div>
+                            <div class="container-p-header rounded-pill">
+                                <p class="p">Piano blaze</p>
+                            </div>
+                            <div class="container-p-3-app-header rounded-pill">
+                                <p class="p">3 app</p>
+                            </div>
+                            <div class="container-icon-angles">
+                                <i class="fa-solid fa-angles-right fa-2xs" style="color: #ffffff;"></i>
+                            </div>
+                            <div class="container-p-plus-header d-xl-none rounded-pill">
+                                <p class="p">+</p>
+                            </div>
+                            <div class="container-p-xl-header d-none d-xl-inline rounded-pill">
+                                <p class="p-xl-header">Boolean mobile app</p>
+                            </div>
+                            <div class="container-p-xl-header d-none d-xl-inline rounded-pill">
+                                <p class="p-xl-header">Boolean web app</p>
+                            </div>
+                            <div class="container-p-xl-header d-none d-xl-inline rounded-pill">
+                                <p class="p-xl-header">Boolean blog app</p>
+                            </div>
                         </div>
                         <div class="col-12 col-md-6 height-h5-header padd-header marg-header text-white">
                             <h6>Studenti online negli ultimi 30 minuti</h6>
@@ -382,17 +415,17 @@
                                   <li class="list-group-item d-flex" style="height: 40px;">
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
-                                    <p class="ms-1">Kickoff nuove classi</p>
+                                    <p class="ms-1 p-todo">Kickoff nuove classi</p>
                                   </li>
                                   <li class="list-group-item d-flex" style="height: 40px;">
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
-                                    <p class="ms-1">Lezione su Bootstrap 5 in classe #75</p>
+                                    <p class="ms-1 p-todo">Lezione su Bootstrap 5 in classe #75</p>
                                   </li>
                                   <li class="list-group-item d-flex" style="height: 40px;">
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
-                                    <p class="ms-1">Controllare username github studenti</p>
+                                    <p class="ms-1 p-todo">Controllare username github studenti</p>
                                   </li>
                                 </ul>
                             </div>
