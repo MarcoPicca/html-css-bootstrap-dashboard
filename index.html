@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -85,35 +85,84 @@
         <main>
             <header class="header_main">
                 <div class="row my_row_header">
-                    <div class="col-12 d-flex col-md-3 padd-header marg-header text-white">
-                        <h6 class="f-slim d-flex align-items-center mx-3 fs-16">Nuovo Studente</h6>
-                        <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
+                    <div class="col-12 d-flex col-md-4 padd-header marg-header text-white">
+                        <h6 class="f-slim d-flex align-items-start mx-3 fs-16">Nuovo Studente</h6>
+                        <a class="btn" data-bs-toggle="offcanvas" href="#my_offcanvas" aria-controls="offcanvasExample">
                             <div class="add-student">+</div>
                         </a>
-                          
-                          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="container-offcanvas">  
+                          <div class="offcanvas offcanvas-end" tabindex="-1" id="my_offcanvas" aria-labelledby="offcanvasExampleLabel">
                             <div class="offcanvas-header">
                               <h5 class="offcanvas-title fs-6" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
-                            <div class="offcanvas-body">
-                              <div>
-                                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                              </div>
-                              <div class="dropdown mt-3">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                  Dropdown button
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                              </div>
+                            <div class="offcanvas-body col-12">
+                                <form class="row">
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Nome</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                      <label for="exampleInputPassword1" class="form-label">Cognome</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Indirizzo</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="row d-flex">
+                                        <div class="col-12 col-md-4 mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Città</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="col-12 col-md-5 d-flex flex-column">
+                                            <label for="exampleInputPassword1" class="form-label">Stato</label>
+                                            <select class="form-select " style="width: 100%;" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                                <option selected>Choose...</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-md-3 mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Cap</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                    </div>
+                                    <div class="input-group d-flex flex-column">
+                                        <label for="exampleInputPassword1" class="form-label">Foto</label>
+                                        <input type="file" class="form-control" style="width: 100%;" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                    </div>
+                                    <div class="my-3 ms-3 form-check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    </div>
+                                    <div class="mb-3">
+                                        <button type="submit" class="btn btn-primary">Salva</button>
+                                        <button type="submit" class="btn btn-warning">Svuota</button>
+                                    </div>
+                                  </form>
                             </div>
                           </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-8 my-little_row_header">
+                    <div class="col-12 col-md-7 my-little_row_header">
                         <div class="col-7 col-md-6 height-h5-header d-flex flex-wrap padd-header marg-header text-white">
                             <div class="container-h5-header">
                                 <h5>Boolean</h5>
